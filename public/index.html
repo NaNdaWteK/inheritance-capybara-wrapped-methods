@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Título</h1>
+        <h2 class="subtitle">Subtitle</h2>
+        <form action="index.html" method="post" id="test">
+            <div class="form-group"><label for=""><input type="text" name="first" class="form-control"></label></div>
+            <div class="form-group"><label for=""><input type="text" name="second" class="form-control"></label></div>
+            <button id="enabled" type="button">Enabled</button>
+            <button id="disabled" disabled type="button">Disabled</button>
+        </form>
+        <script>
+            var button = document.getElementById('enabled')
+            button.addEventListener('click', function(){
+                var div = document.createElement('div');
+                div.setAttribute('id', 'clicked');
+                div.textContent = 'Button enabled clicked';
+                document.getElementsByTagName('body')[0].append(div)
+            });
+        </script>
+    </body>
+</html>
