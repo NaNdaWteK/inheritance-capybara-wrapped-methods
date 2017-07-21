@@ -18,7 +18,7 @@ That will raise the web in your localhost:4567
 
 Then in other terminal you can run the bdd tests with:
 
-`bundle exec rake tdd`
+`bundle exec rake bdd`
 
 To run specific test you can do it like this:
 
